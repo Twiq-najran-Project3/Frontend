@@ -1,0 +1,22 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+
+  }
+  .gridItem {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  .img{
+      width:250px;
+      border: 2px solid red;
+      border-radius: 25px;
+  }
+  /* .item1 {
+    grid-column: 1;
+    grid-row: 1/ span 1;
+  } */

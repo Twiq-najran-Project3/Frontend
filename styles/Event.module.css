@@ -16,7 +16,20 @@
       border: 2px solid red;
       border-radius: 25px;
   }
-  /* .item1 {
-    grid-column: 1;
-    grid-row: 1/ span 1;
-  } */
+/* ----------------------- Event css------------------------- */
+
+.card1{
+  margin-top: 10px;
+  border-radius: 10px;
+
+}
+
+.btn{
+  margin-top: 15px;
+  width: 80%;
+  background-color: #328297;
+  border: none;
+  font-size: 30px;
+  color: white;
+  margin-left: 150px;
+}

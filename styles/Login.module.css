@@ -1,0 +1,46 @@
+.bg {
+  background-color: #ecf0f1;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  height: 50px;
+}
+
+.form {
+  margin-top: 80px;
+  justify-content: center
+
+}
+
+.formBody {
+  border: 2px solid #efeeee;
+ border-radius: 10px;
+ padding: 10px;
+ 
+}
+
+.head{
+  background-color: #efeeee;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  text-align: center;
+}
+
+.back{
+  max-width: 100%;
+
+}
+
+
+.btn {
+  width: 100%;
+  background-color: #328297;
+  border: none;
+  font-size: 25px;
+  color: white;
+}
+
+.downText{
+  font-size: 15px;
+  text-align:center ;
+  color: rgb(17, 17, 17);
+}

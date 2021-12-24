@@ -5,7 +5,7 @@ import{Container,Navbar,NavDropdown,Nav} from "react-bootstrap"
 export default function Header() {
     return (
         <div>
-  <Navbar className={styles.bg}  expand="lg">
+  <Navbar className={styles.bg}  expand="lg" fixed=''>
   <Container>
     <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -18,6 +18,8 @@ export default function Header() {
           <NavDropdown.Item href="#action/3.1">Profile</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">Logout</NavDropdown.Item>
         </NavDropdown>
+        <Nav.Link href="/login">Login</Nav.Link>
+
       </Nav>
     </Navbar.Collapse>
   </Container>

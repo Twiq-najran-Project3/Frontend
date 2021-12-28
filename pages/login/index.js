@@ -1,12 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../../styles/Login.module.css";
 import axios from "axios"
+import swal from 'sweetalert';
 import { useState } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import Link from "next/link";
+import { useRouter } from "next/router";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const router=useRouter();
 
   const handelSubmit = (e) => {
     e.preventDefault();
@@ -18,8 +21,11 @@ export default function Login() {
       })
       .then((res) => {
         localStorage.setItem("token", JSON.stringify(res.data.token));
+        swal("Good job!", "Welcome agine!", "success")
+        router.push("/")
       })
       .catch((err) => {
+        swal("Oops...", "Something went wrong!", "error");
         console.log("forbiden");
       });
   };

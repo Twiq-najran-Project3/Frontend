@@ -5,7 +5,9 @@
 .img{
   height:20vh;
 }
-
+.Carousel{
+  margin-top: 5px;
+}
 /* .main {
   min-height: 100vh;
   padding: 4rem 0;

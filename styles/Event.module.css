@@ -6,16 +6,74 @@
 
   }
   .gridItem {
-    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: rgba(192, 41, 41, 0.8); */
     text-align: center;
     padding: 20px;
+    font-size: 25px;
+  }
+  .cardList{
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 30px auto;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+
+  .card .cardImg {
+    width: inherit;
+    height: inherit;
+    border-radius: 20px;
+  }
+
+
+  .card .cardImg img {
+    width: inherit;
+    height: inherit;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  .card .title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
     font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
   }
-  .img{
-      width:250px;
-      border: 2px solid red;
-      border-radius: 25px;
+  .title{
+    color:white;
+   background-color: red;
   }
+
+
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+
+
+  
+  @media all and (max-width: 500px) {
+    .cardList {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+  
 /* ----------------------- Event css------------------------- */
 
 .card1{

@@ -4,6 +4,7 @@ import { useState } from "react";
 import styles from "../../styles/Rigester.module.css";
 import { Row, Col, Form, Container } from "react-bootstrap";
 import Link from "next/link";
+import { useRouter } from "next/router";
 export default function Rigester() {
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
@@ -11,6 +12,8 @@ export default function Rigester() {
   const [userName, setUserName] = useState("")
   const [password, setPassword] = useState("")
   const [phoneNumber, setPhoneNumber] = useState("")
+
+  const router=useRouter();
 
   const handelSubmit = (e) => {
     e.preventDefault();
@@ -27,6 +30,7 @@ export default function Rigester() {
       })
       .then((res) => {
        console.log(res.data);
+       router.push('/login')
       })
       .catch((err) => {
         console.log("forbiden");

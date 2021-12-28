@@ -14,18 +14,31 @@ export default function Events() {
   return (
     <div className={styles.gridContainer}>
       {events &&
-        events.map((elem,i) => {
+        events.map((elem, i) => {
           return (
-            <div className={styles.gridItem }>
-              <img src={elem.images} className={styles.img}></img>
-              <h1>{elem.eventName}</h1>
-              <Link href={`/events/${i+1}`}>
-          <button>{elem.eventName}</button>
-        </Link>
-              
+            <div className={styles.gridItem}>
+              <div className={styles.cardList}>
+                <Link href={`/events/${i+1}`}>
+                <div className={styles.card}>
+                <div className={styles.cardImg}>
+                    <img src={elem.images}></img>
+                    <div>
+                      <p className={styles.title}>{elem.eventName}</p>
+                    </div>
+                </div>
+                </div>
+                </Link>
+              </div>
             </div>
           );
         })}
     </div>
   );
+}
+{
+  /* <img src={elem.images} className={styles.img}></img>
+              <h1></h1>
+              <Link href={`/events/${i+1}`}>
+          <button>{elem.eventName}</button>
+        </Link> */
 }
